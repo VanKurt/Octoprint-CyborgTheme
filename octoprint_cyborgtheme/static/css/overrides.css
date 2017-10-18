@@ -187,3 +187,19 @@ select[multiple] {
     background-color: inherit;
     color: inherit;
 }
+
+/*bootstrap modal override for the restart confirmation dialog being hidden by the restart prompt*/
+@media (max-width: 979px) {
+    .modal.fade.in, 
+    .modal.container.fade.in,
+    .modal.modal-overflow.fade.in {
+        top: 30%;
+        bottom: auto;
+    }
+}
+/*bootstrap modal override for the restart confirmation dialog being hidden by the restart prompt part2 (this keeps the settings dialog from following the 30% rule*/
+@media (max-width: 979px) {
+    div#settings_dialog.Cyborgified_Settings {
+        top: 1%;
+    }
+}
